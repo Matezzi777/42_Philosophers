@@ -6,7 +6,7 @@
 /*   By: maxmart2 <maxmart2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/12 18:05:54 by maxmart2          #+#    #+#             */
-/*   Updated: 2025/08/14 15:42:07 by maxmart2         ###   ########.fr       */
+/*   Updated: 2025/08/14 16:48:48 by maxmart2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,7 @@ typedef struct s_data
 	int		*tab;
 	t_bool	end;
 	t_fork	**forks;
-	t_philo	*philos;
+	t_philo	**philos;
 }				t_data;
 
 // Parsing
