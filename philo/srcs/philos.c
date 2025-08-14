@@ -1,22 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   philos.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: maxmart2 <maxmart2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/12 18:13:24 by maxmart2          #+#    #+#             */
-/*   Updated: 2025/08/14 13:41:59 by maxmart2         ###   ########.fr       */
+/*   Created: 2025/08/14 15:28:29 by maxmart2          #+#    #+#             */
+/*   Updated: 2025/08/14 15:29:27 by maxmart2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
-int	main(int argc, char **argv)
+t_bool	init_philos(t_data *data)
 {
-	t_data	*data;
 
-	data = parse_arguments(argc, argv);
-	if (!data)
-		return (0);
 }

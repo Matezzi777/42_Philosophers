@@ -1,22 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: maxmart2 <maxmart2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/12 18:13:24 by maxmart2          #+#    #+#             */
-/*   Updated: 2025/08/14 13:41:59 by maxmart2         ###   ########.fr       */
+/*   Created: 2025/08/14 14:26:36 by maxmart2          #+#    #+#             */
+/*   Updated: 2025/08/14 14:28:13 by maxmart2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
-int	main(int argc, char **argv)
+/*
+	Check if the character passed is a digit.
+*/
+t_bool	ft_isdigit(char c)
 {
-	t_data	*data;
-
-	data = parse_arguments(argc, argv);
-	if (!data)
-		return (0);
+	if ('0' <= c && c <= '9')
+		return (TRUE);
+	return (FALSE);
 }

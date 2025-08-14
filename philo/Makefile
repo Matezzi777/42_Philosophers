@@ -5,15 +5,22 @@ NAME = philo
 INCLUDES = -I/usr/include -I.
 
 ###################### FILES ######################
-RAW_SRCS = main.c
+RAW_SRCS = clean.c \
+			forks.c \
+			ft_atol.c \
+			ft_isdigit.c \
+			ft_putstr_fd.c \
+			main.c \
+			parse_arguments.c \
+			philos.c
 SRCS = $(addprefix srcs/, $(RAW_SRCS))
 OBJS = $(SRCS:.c=.o)
 
 ###################### RULES ######################
 all: $(NAME)
 
-$(NAME):
-	$(CC) $(CFLAGE) $(OBJS) -o $@
+$(NAME): $(OBJS)
+	$(CC) $(CFLAGS) $(OBJS) -o $@
 
 %.o: %.c
 	$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@

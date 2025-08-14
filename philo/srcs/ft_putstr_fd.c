@@ -1,22 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: maxmart2 <maxmart2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/12 18:13:24 by maxmart2          #+#    #+#             */
-/*   Updated: 2025/08/14 13:41:59 by maxmart2         ###   ########.fr       */
+/*   Created: 2025/08/14 13:34:17 by maxmart2          #+#    #+#             */
+/*   Updated: 2025/08/14 13:36:49 by maxmart2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
-int	main(int argc, char **argv)
+/*
+	Write a message in the given file descriptor.
+*/
+void	ft_putstr_fd(int fd, char *message)
 {
-	t_data	*data;
+	int	i;
 
-	data = parse_arguments(argc, argv);
-	if (!data)
-		return (0);
+	i = -1;
+	while (message[++i])
+		write(fd, &message[i], 1);
 }
