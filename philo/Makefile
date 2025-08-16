@@ -2,17 +2,13 @@
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 NAME = philo
-INCLUDES = -I/usr/include -I.
+INCLUDES = -I/usr/include -I./includes
 
 ###################### FILES ######################
-RAW_SRCS = clean.c \
-			forks.c \
-			ft_atol.c \
-			ft_isdigit.c \
-			ft_putstr_fd.c \
-			main.c \
-			parse_arguments.c \
-			philos.c
+RAW_SRCS = main.c \
+			check_parameters.c \
+			parsing.c \
+			utils.c
 SRCS = $(addprefix srcs/, $(RAW_SRCS))
 OBJS = $(SRCS:.c=.o)
 

@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: maxmart2 <maxmart2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/12 18:13:24 by maxmart2          #+#    #+#             */
-/*   Updated: 2025/08/14 13:41:59 by maxmart2         ###   ########.fr       */
+/*   Created: 2025/08/16 20:56:34 by maxmart2          #+#    #+#             */
+/*   Updated: 2025/08/16 21:40:48 by maxmart2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,12 @@
 
 int	main(int argc, char **argv)
 {
-	t_data	*data;
+	// t_table	*table;
 
-	data = parse_arguments(argc, argv);
-	if (!data)
+	if (!check_parameters(argc, argv))
 		return (0);
+	printf("Valid arguments.\n");
+	// table = parsing(argc, argv);
+	// if (!table)
+	// 	return (0);
 }
