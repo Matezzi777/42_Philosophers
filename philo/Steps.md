@@ -2,10 +2,9 @@
 ### 1. Checker les inputs.										OK
 Doit posséder 4 ou 5 arguments.
 Tous les arguments doivent être des nombres positifs non-nuls.
-### 2. Construire les structures.
+### 2. Construire les structures.								OK
 Une structure pour les informations générales (= la table).
 Une structure pour les philosophes.
-Une structure pour les fourchettes.
 ### 3. Initialisation et allocations.
 Remplir les structures.
 Initialiser les mutexes.

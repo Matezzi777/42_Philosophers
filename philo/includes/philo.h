@@ -6,7 +6,7 @@
 /*   By: maxmart2 <maxmart2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/16 20:57:46 by maxmart2          #+#    #+#             */
-/*   Updated: 2025/08/16 23:02:26 by maxmart2         ###   ########.fr       */
+/*   Updated: 2025/08/17 18:24:44 by maxmart2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,5 +55,7 @@ t_bool	check_parameters(int argc, char **argv);
 t_table	*parsing(int argc, char **argv);
 long	ft_atol(char *str);
 void	destroy_forks(t_table *table);
+void	clean_exit(t_table *table);
+void	start_simulation(t_table *table);
 
 #endif

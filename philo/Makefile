@@ -9,7 +9,8 @@ RAW_SRCS = main.c \
 			check_parameters.c \
 			parsing.c \
 			utils.c \
-			clean.c
+			clean.c \
+			philo.c
 SRCS = $(addprefix srcs/, $(RAW_SRCS))
 OBJS = $(SRCS:.c=.o)
 
